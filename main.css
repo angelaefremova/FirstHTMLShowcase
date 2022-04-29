@@ -1,0 +1,333 @@
+/*CSS for all pages*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(93, 115, 126, 1);
+    margin: 0;    
+}
+.header::first-letter{
+    font-size: 130px;
+    padding-right: 7px;
+    text-transform: capitalize;
+}
+.header {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    color: rgba(3, 0, 39, 1);
+    text-shadow: 2px 3px rgba(21, 30, 63, 0.37); 
+    background-color: rgb(253, 253, 253);   
+}
+.pictures img{
+    max-width: 100%;
+    height: auto;
+}
+.footer{
+    background-color: rgba(255, 255, 255, 0.808);
+    margin-top: 2%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+h1, h2{
+    color: rgba(43, 79, 62, 1);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-shadow: rgba(43, 79, 62, 0.493);    
+}
+h3, h4{
+    color: rgba(43, 79, 62, 1);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.493);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: xx-large;  
+}
+hr{
+    color:rgba(43, 79, 62, 1);
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#menu li {
+    float: left;  
+}
+#menu li a {
+    display: block;
+    color: rgba(43, 79, 62, 1);
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;   
+}
+#menu li a:hover:not(.active) {
+    background-color:  rgba(43, 79, 62, 0.685);
+    color: white;
+}
+#menu .active {
+    background-color: rgb(43, 79, 62, 1);
+    color: white;
+}
+/*Index*/
+.main{
+    background-color: rgb(253, 253, 253);
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+}
+.greeting{
+    padding: 2cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#welcome{
+    font-size: 40px;
+    font-weight: bold;
+}
+.main:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/*Resume*/
+.resume-main, .education-main, .coursework-main, .work-main, .skills-main, .activities-main{
+    background-color: rgba(242, 243, 217, 1);
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+    padding: 0.5cm;
+}
+.resume-main{
+    text-align: center;
+}
+.resume-nav{
+    border: solid 1px black;
+    text-align: center;
+    list-style-type: none;
+}
+.resume-nav li{
+    text-align: center;
+}
+.resume-nav ul {
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;;
+    position: relative;
+    width: 20%;
+    list-style-type: none;  
+}
+.resume-nav a {
+    display: block;
+    color:rgba(43, 79, 62, 1);
+    text-align: center;
+    text-decoration: none; 
+}
+.resume-nav a:hover:not(.active) {
+    background-color:  rgba(43, 79, 62, 1);
+    color: white;
+}
+.work li{
+    list-style-type: square;
+}
+.work{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background-color:rgba(43, 79, 62, 1);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;  
+}
+.work-main p{
+    padding-left: 1cm;
+}
+#courses tbody td{
+    border: solid 2px black;
+    text-align: center;
+}
+#courses tbody td li{
+    text-align: left;
+}
+/*Resume Linkedin*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: rgba(43, 79, 62, 1);
+    box-shadow: 5px 5px rgba(43, 79, 62, 0.575);
+    color: rgb(255, 255, 255);
+}
+.fa:hover, .fa:focus{
+    background-color: white;
+    color: rgba(43, 79, 62, 1);
+}
+/*HTML5 Tables*/
+.main-tables{
+    background-color: rgba(93, 115, 126, 1);
+}
+thead, tfoot{
+    background-color: rgba(43, 79, 62, 1);
+    color: rgb(255, 255, 255);
+}
+.table1, .table2, .table3, .table4, .table5{
+    margin-left: auto;
+    margin-right: auto;
+}
+.table1 tbody tr td{
+    width: fit-content;
+    padding: 15px;
+    border-spacing: 200px;
+    text-align: center;
+    border: none;
+    background-color: rgba(242, 243, 217, 1);
+    color: rgba(43, 79, 62, 1);
+}
+#goodreads{
+    background-color: rgba(43, 79, 62, 1);
+    color: rgb(255, 255, 255);
+}
+.table1 th, .table2 th{
+    padding: 10px;
+}
+.table2 tbody tr td {
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+    border-spacing: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgba(242, 243, 217, 1);
+    color: rgba(43, 79, 62, 1);
+}
+.table3 tbody{
+    background-color: rgba(43, 79, 62, 1);
+    color:rgba(3, 0, 39, 1);
+}
+#caption1, #caption2{
+    font-weight: bold;
+    padding: 10px;
+}
+.table3 table tbody tr td{
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    border: solid 5px rgba(3, 0, 39, 1);
+    background-color: rgba(242, 243, 217, 1);
+  }
+.table4 tbody tr td{
+    width: 10px;
+    padding: 2px;
+    border-spacing: 2px;
+    text-align: center;
+    border: 5em;
+    background-color: rgba(242, 243, 217, 1);
+}
+.table5 tbody tr td{
+    width: 10cm;
+    padding: 10px;
+    height: 2cm;
+    border-spacing: 10px;
+    text-align: right;
+    vertical-align: bottom;
+    border: none;
+    background-color: rgba(242, 243, 217, 1);
+}
+#caption1{
+    caption-side: top;
+}
+#caption2{
+    caption-side: bottom;
+}
+/*HTML Lists*/
+.list1, .list2, .list3, .list4, .list5{
+    margin-left: auto;
+    margin-right: auto;
+}
+.list1 td, .list4 td, .list5 td{
+    border: solid 2px white;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 8cm;
+}
+.list2 td{
+    border: solid 2px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    width: 8cm;
+}
+.list2 tbody tr :nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
+.list1-1{
+    list-style-type: decimal;
+}
+.list1-2{
+    list-style-type: lower-latin;
+}
+.list1-3{
+    list-style-type: upper-alpha;
+}
+.list1-4{
+    list-style-type: lower-roman;
+}
+.list1-5{
+    list-style-type: upper-roman;
+}
+.list2-1{
+    list-style-type: disc;
+}
+.list2-2{
+    list-style-type: circle;
+}
+.list2-3{
+    list-style-image: url(../images/star.png)
+}
+.list4-1-1{
+    list-style-type: lower-latin;
+    font-weight: bold;
+}
+.list4-1-2{
+    list-style-type: decimal;
+    color: black;
+    font-weight: lighter;
+    text-align: left;
+}
+.list5-1-1{
+    font-weight: bold;
+}
+.list5-1-2{
+    color: black;
+    font-weight: lighter;
+    text-align: left;
+}
+.list1 caption, .list2 caption, .list3 caption, .list4 caption, .list5 caption{
+    color: rgba(43, 79, 62, 1);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.493);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: x-large;  
+    font-weight: bold;
+}
+/*contact page*/
+.contact{
+    padding: 2cm;
+    text-align: center;
+}
+.contact a{
+    text-decoration: none;
+    color: rgba(43, 79, 62, 1);
+    font-size: 120%;
+    font-weight: bold;
+    background-color: white;
+    border: 1em rgba(43, 79, 62, 1) solid;
+}
+iframe{
+    border: none;
+}

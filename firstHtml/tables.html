@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angela Efremova</title>
+    <meta name="description" content="Assignment2">
+    <meta name="keywords" content="HTML5 Tables, colspan, rowspan, nested tables">
+    <meta name="author" content="Angela Efremova">
+    <link rel="shortcut icon" href="assets/images/angie.ico">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head> 
+<body>   
+    <nav id="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a class="active" href="tables.html">HTML5 Tables</a></li>
+        <li><a href="html5lists.html">HTML5 Lists</a></li>
+        <li><a href="contact.html">Contact Me</a></li> 
+    </ul>
+    </nav> 
+    <br>
+    <div class="header">hTML Tables.</div>  
+    <div class="pictures"><img src="./assets/images/tablespic.JPG" alt="Tables in Paris"></div>
+    <div class="main-tables">
+        <!--Table example 1
+This table example will demonstrate the usage of the following
+o table attributes: using CSS (width - cellpadding - cellspacing - alignment - border – bgcolor)
+o The table will have two (2) columns x seven (7) rows
+o the first row is used for column headings (Attribute, Values)
+o subsequent rows - column one shows the table attribute, and the second column shows the
+different values/format for the attribute-->
+<table class="table1">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Values</th>
+        </tr> 
+     </thead>
+    <tbody>
+        <tr>
+            <td>Width</td>
+            <td>Fit-Content</td>
+        </tr>
+        <tr>
+            <td>Cell Padding</td>
+            <td>15px</td>
+        </tr>
+        <tr>
+            <td>Cell Spacing</td>
+            <td>200px</td>
+        </tr>
+        <tr>
+            <td>Alignment</td>
+            <td>Center</td>
+        </tr>
+        <tr>
+            <td>Border</td>
+            <td>None</td>
+        </tr>
+        <tr>
+            <td>BG Color</td>
+            <td>rgba(242, 243, 217, 1)</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<!--2. Table example 2
+This table example will demonstrate the usage of colspan, rowspan and cell alignment (vertical and
+horizontal)
+o The table will have four (4) columns x six (6) rows.
+o The text within cells must be meaningful.-->
+<table class="table2">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>My Rating</th>
+            <th><a id="goodreads" href="https://www.goodreads.com/" target="_blank">Good Reads Rating</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./assets/images/thedefdec.jpg" height="100" width="70" alt="The Defining Decade by Meg Jay"></td>
+            <td>Meg Jay</td>
+            <td>5/5</td>
+            <td>4/5</td>  
+        </tr>
+        <tr>
+            <td><img src="./assets/images/calmthefdown.jpg" height="100" width="70" alt="Calm the F*ck Down by Sarah Knight"></td>
+            <td>Sarah Knight</td>
+            <td colspan="2">3.5/5</td>
+        </tr>
+        <tr>
+            <td><img src="./assets/images/runninginthefamily.jpg" height="100" width="70" alt="Running in the Family by Michael Ondaatje"></td>
+            <td>Michael Ondaatje</td>
+            <td>3.5/5</td>
+            <td>4/5</td>   
+        </tr>
+        <tr>
+            <td><img src="./assets/images/theawakening.jpg" height="100" width="70" alt="The Awakening by Kelley Armstrong"></td>   
+            <td rowspan="2">Kelley Armstrong</td>
+            <td>5/5</td>
+            <td rowspan="2">4/5</td>
+        </tr>
+        <tr>
+            <td><img src="./assets/images/thereckoning.jpg" height="100" width="70" alt="The Reckoning by Kelley Armstrong"></td>
+            <td>3.5/5</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<!--3. Table example 3
+This table example will demonstrate the usage of nested tables - side by side
+o For this example, you need three (3) tables - one table with one (1) row x two (2) cells - each
+cell will have a table.
+o the inner left nested table will have a caption appearing at the top, and the inner right nested
+table will have a caption appearing at the bottom | use CSS to set caption position.
+o both inner nested tables will have borders
+o the inner left nested table will have two (2) columns x two (2) rows
+o the inner right nested table will have two (2) columns x three (3) rows
+o the text within cells must be meaningful.-->
+<table class="table3">
+    <tbody>
+        <tr>
+            <td>
+                <table class="t1">
+                    <caption id="caption1">My Favourite:</caption>
+                    <tbody>
+                    <tr>
+                        <td>Food</td>
+                        <td>Ramen</td>
+                    </tr>
+                    <tr>
+                        <td>Drink</td>
+                        <td>Iced Coffee</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <caption id="caption2">When I Met My BFF's</caption>
+                    <tbody>
+                    <tr>
+                        <td>Charlotte</td>
+                        <td>Grade 7</td>
+                    </tr>
+                    <tr>
+                        <td>Karin</td>
+                        <td>Grade 4</td>
+                    </tr>
+                    <tr>
+                        <td>Pavle</td>
+                        <td>Summer 2020</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<!--4. Table example 4
+This table example will demonstrate the usage of an image within a table cell
+o the table will have one (1) column x one (1) row
+o Insert the George Brown logo in the cell. Use figure and figcaption.
+o Include your full name and your George Brown email address below the image.-->
+<table class="table4">
+    <tbody>
+        <tr>
+            <td>
+        <figure>
+            <img src="./assets/images/george_brown_logo.png" width="200" height="150" alt="George Brown Logo">   
+            <figcaption>Angela Efremova <a href="mailto:Angela.Efremova@georgebrown.ca">Angela.Efremova@georgebrown.ca</a></figcaption>
+        </figure>
+        
+       </td> 
+    </tr>  
+    </tbody>
+</table>
+<hr>
+<!--5. Table example 5
+This table example will demonstrate the usage of the following
+o text alignment - vertical and horizontal
+o the text to be used is COMP1223
+o make sure to use CSS for different options associated with align and valign on the tr and td tags-->
+<table class="table5">
+    <tbody>
+        <tr>
+            <td>COMP1223</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<hr>
+<div class="footer">
+    <script src="https://my.gblearn.com/js/loadscript.js"></script>
+</div>
+</body>
+</html> 
